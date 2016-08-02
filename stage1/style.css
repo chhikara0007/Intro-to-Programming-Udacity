@@ -55,37 +55,14 @@ h3 {
 
 
 #First-Week {
-  background-color: orange;
+  background-color: green;
 	border-radius: 20px;
 	color: white;
 	padding: 15px;
 }
 
-.web-basics {
-	background-color: #c1c1c1;
-	padding: 5px;
-	margin: 10px;
-	border-radius: 6px;
-	color: black;
-}
 
-.HTML {
-	background-color: #c1c1c1;
-	padding: 5px;
-	margin: 10px;
-	border-radius: 6px;
-	color: black;
-}
-
-.important-tags {
-	background-color: #c1c1c1;
-	padding: 5px;
-	margin: 10px;
-	border-radius: 6px;
-	color: black;
-}
-
-.inline-block {
+.notes {
 	background-color: #c1c1c1;
 	padding: 5px;
 	margin: 10px;
@@ -106,44 +83,4 @@ img {
 	border-radius: 20px;
 	color: white;
 	padding: 15px;
-}
-
-
-.html-structure {
-	background-color: #c1c1c1;
-	padding: 5px;
-	margin: 8px;
-	border-radius: 6px;
-	color: black;
-}
-.ways-to-set-CSS {
-	background-color: #c1c1c1;
-	padding: 5px;
-	margin: 10px;
-	border-radius: 6px;
-	color: black;
-}
-
-.box-model {
-	background-color: #c1c1c1;
-	padding: 5px;
-	margin: 10px;
-	border-radius: 6px;
-	color: black;
-}
-.box-summary {
-	background-color: #c1c1c1;
-	padding: 5px;
-	margin: 10px;
-	border-radius: 6px;
-	color: black;
-}
-
-
-.useful-tips {
-	background-color: #c1c1c1;
-	padding: 5px;
-	margin: 10px;
-	border-radius: 6px;
-	color: black;
 }
