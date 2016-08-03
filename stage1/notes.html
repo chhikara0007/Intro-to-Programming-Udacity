@@ -12,7 +12,7 @@
   <body>
 <!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings indicate content that is more important. -->
     <h1>Important Concepts</h1>
-    <div id='First-Week'>
+    <div class='Week First'>
       <h2>Lesson 1</h2>
       <div class='notes'>
         <h3>The basics of the web</h3>
@@ -54,17 +54,20 @@
           For example, <em>br tag</em> is inline and <em>p tag</em> is block, which will
           usually provide an invisible box and put every piece of information inside.
         </p>
-        <em>Showing an example picture</em>
         <p>
+          <em>Showing an example picture</em>
           <img src="http://www.html-helper.net/wp-content/uploads/2013/07/HTML.jpg" alt="HTML">
         </p>
-        <p> Let's try <em>br tag</em> to show the picture again.
-          <br> <img src="http://www.html-helper.net/wp-content/uploads/2013/07/HTML.jpg" alt="HTML">
+        <p>
+          Let's try <em>br tag</em> to show the picture again.
+        </p>
+        <p>
+          <img src="http://www.html-helper.net/wp-content/uploads/2013/07/HTML.jpg" alt="HTML">
         </p>
       </div>
     </div>
     <br>
-    <div id='Second-Week'>
+    <div class='Week Second'>
       <h2>Lesson 2</h2>
       <div class='notes'>
         <h3>The Special Structure of HTML</h3>
@@ -72,15 +75,19 @@
           The HTML documents have a special nested structure, like tree. Although this might sound
           intimidating in the beginning, it helps in organizing things into boxes at diffrent levels.
           In general, the tree-like structure comes from the idea of boxifying.
-          <br>We can refer to this picture to have an initial imprssion of the HTML structure.
-          <br><img src="http://www.bluefountainmedia.com/glossary/wp-content/uploads/2011/04/html.gif"
-          alt="Here should be a pic of sample HTML structure">
+        </p>
+        <p>
+          We can refer to this picture to have an initial imprssion of the HTML structure.
         </p>
         <br>
+          <img src="http://www.bluefountainmedia.com/glossary/wp-content/uploads/2011/04/html.gif"
+          alt="Here should be a pic of sample HTML structure">
+        <p>
           <em>Notes</em>: HTML and CSS are both languages; HTML controls the <em>content</em>
           and <em>format</em> of a webpage. On the other hand, CSS controls the <em>style</em>
           of displaying the HTML webage, e.g. colors, margin, size etc.; DOM(Document Object
           Model) refers to the tree-like structure of a webpage specifically.
+        </p>
       </div>
       <div class='notes'>
         <h3>Several Ways to Include CSS</h3>
@@ -98,7 +105,7 @@
       </div>
       <div class='notes'>
         <h3>Summary of Playing with Boxes</h3>
-          <b>Box Sizing</b>
+          <h4>Box Sizing</h4>
             <p>
               There are two ways to specify box sizes:
             </p>
@@ -108,7 +115,7 @@
               <li>Set the box-sizing attribute to border-box for every element.</li>
             </ul>
 
-          <b>Box Positioning</b>
+          <h4>Box Positioning</h4>
             <p>
               Divs are block elements, so they will take up the entire width of a page. Adding the rule
               <strong>display:flex;</strong> to the approriate CSS will override this behavior and let divs appear next
@@ -117,24 +124,26 @@
       </div>
       <div class='notes'>
         <h3>Useful tips</h3>
-          <div class='Tip 1'>
-            <em><b>Revert Temporary Styling Changes</b></em>
+          <div class='Tip One'>
+            <h4><em>Revert Temporary Styling Changes</em></h4>
             <p>
               We can modify the style settings via <span style="color:red">Developer Tools</span>. For example, we can change the margin
               of an invisible box. If we don't like the changes, <span style="color:blue">refreshing</span>
               the page should be able to help us revert the changes.
             </p>
           </div>
-          <div class='Tip 2'>
-            <em><b>How to Listen to Expert</b></em>
+          <div class='Tip Two'>
+            <h4><em>How to Listen to Expert</em></h4>
             <p>
               Expert might assume the listeners have the knowledge of terminology. So it is ok to
               ask questions when talking to others.
             </p>
           </div>
-          <div class='Tip 3'>
-            <em><b>Code, Test and Refine</b></em>
-            <br>It is highly recommended to follow the steps below to better creating webpages.
+          <div class='Tip Three'>
+            <h4><em>Code, Test and Refine</em></h4>
+            <p>
+              It is highly recommended to follow the steps below to better creating webpages.
+            </p>
             <ul>
               <li>Look for natural boxes;</li>
               <li>Look for repeated styles of semantic elements;</li>

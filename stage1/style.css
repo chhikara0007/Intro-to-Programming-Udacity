@@ -17,12 +17,9 @@ if you need a refresher about how to do this. */
 
 /* change to a nicer font */
 body {
-	font-family: "Comic Sans MS", cursive, sans-serif;
-
-  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/07/Free-online-desktop-wallpaper-1080p.jpg");
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-image: url(http://eskipaper.com/images/desktop-backgrounds-30.jpg);
 }
-
-
 
 h1 {
 	text-align: center;
@@ -31,31 +28,23 @@ h1 {
 }
 
 h2 {
-    display: block;
     font-size: 2.5em;
-    margin-top: 0.50em;
-    margin-bottom: 0.50em;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0.50em 0;
     font-weight: bold;
     text-align: center;
 }
 
 
 h3 {
-    display: block;
     font-size: 1.7em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 1em 0;
     font-weight: bold;
     text-align: center;
 }
 
 
-#First-Week {
-  background-color: green;
+div.Week {
+  background-color: orange;
 	border-radius: 20px;
 	color: white;
 	padding: 15px;
@@ -76,11 +65,4 @@ img {
   border:1px solid #021a40;
   margin-left: auto;
   margin-right: auto;
-}
-
-#Second-Week {
-  background-color: orange;
-	border-radius: 20px;
-	color: white;
-	padding: 15px;
 }
