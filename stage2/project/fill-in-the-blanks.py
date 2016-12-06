@@ -85,13 +85,15 @@ def display_question(question, target_blank, chances_left, max_tries):
     :param max_tries: num, number of the total available chances
     :return: str, question with related prompt
     '''
+
+    last_chance_indicator = 1
     prompt = '\nThe current paragraph reads as such:\n{}\n\n'
     prompt += 'What should be substituted in for {}? '
     prompt = prompt.format(question, target_blank)
     if chances_left == max_tries:
         return prompt
     new_prompt = ''
-    if chances_left > 1:
+    if chances_left > last_chance_indicator:
         new_prompt += "Let's try again; you have {} tries left!\n\n"
     else:
         new_prompt += 'You only have {} try left!\n\n'
@@ -110,15 +112,16 @@ def update_question(question, blank_num, answer, max_attempts):
     :return: tuple, containing updated question and blank number
     '''
 
+    last_chance_indicator = 1
     chances_left = max_attempts
     target_blank = '__' + str(blank_num) + '__'
     prompt = display_question(question, target_blank, chances_left, max_attempts)
     player_guess = raw_input(prompt).lower()
-    while player_guess != answer.lower() and chances_left > 1:
+    while player_guess != answer.lower() and chances_left > last_chance_indicator:
         chances_left -= 1
         prompt = display_question(question, target_blank, chances_left, max_attempts)
         player_guess = raw_input(prompt).lower()
-    if chances_left > 1:
+    if chances_left > last_chance_indicator:
         print '\nCorrect!\n'
         return (question.replace(target_blank, answer), blank_num + 1)
     else:
